@@ -1,0 +1,12 @@
+{
+  "frontend/src/index.css": "Global dark-theme stylesheet with OKLCH color tokens (electric teal accent), Inter font import, and utility classes for gradient text, teal glow effects, and grid background pattern.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the design system with Inter font family, teal-glow box shadows, and fade-up/pulse-glow keyframe animations.",
+  "frontend/src/App.tsx": "Root app component that composes all landing page sections (Navigation, Hero, Problem, Solution, HowItWorks, BottomCTA, Footer) in a dark-themed layout.",
+  "frontend/src/components/Navigation.tsx": "Sticky top navigation bar with FlowScale AI branding and a \"Book a Call\" button that smooth-scrolls to the `booking-form` section id on the page.",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with abstract background image, radial glow, animated badge, headline with gradient text, subheadline, CTA button, and a three-stat row.",
+  "frontend/src/components/Problem.tsx": "Problem section with headline about 20–30% revenue loss and four icon-backed pain-point cards covering DMs, cart recovery, follow-ups, and lead leakage.",
+  "frontend/src/components/Solution.tsx": "Solution section with \"AI Systems That Work 24/7.\" headline and four service cards (DM Automation, Lead Qualification, Cart Recovery, Email/CRM) in a responsive 2-column grid.",
+  "frontend/src/components/HowItWorks.tsx": "Four-step process section displayed as a horizontal timeline on desktop and vertical stack on mobile, with numbered icon indicators and a connecting gradient line.",
+  "frontend/src/components/BottomCTA.tsx": "Bottom CTA section with an inline booking form (Full Name, Email, Business Name, and automation textarea), client-side validation, loading spinner on submit, backend integration via useActor, and a success confirmation state replacing the form on submission.",
+  "frontend/src/components/Footer.tsx": "Minimal two-column footer with FlowScale AI brand, tagline, copyright year, and caffeine.ai attribution link with UTM tracking."
+}

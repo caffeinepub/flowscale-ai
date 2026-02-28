@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor that defines a ContactFormEntry type and exposes submitContactForm (with validation) and getAllContactEntries methods, storing submissions in an in-memory list.",
+  "backend/migration.mo": "Migration module that initializes a new actor state with an empty contactEntries list, used for canister upgrades.",
+  "feature_evidence.json": "Feature evidence report linking two implemented features—the inline BottomCTA booking form UI and its backend wiring via useActor—to their relevant files and test IDs.",
+  "frontend-file-summaries.txt": "JSON document providing one-sentence summaries of each frontend source file, serving as a quick reference for the project's component and style structure.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH-based CSS custom properties for light and dark color themes including background, foreground, primary, and sidebar tokens.",
+  "frontend/index.html": "Minimal HTML entry point for the FlowScale AI React app, mounting the app into a root div and loading the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that assembles the full landing page by composing Navigation, Hero, Problem, Solution, HowItWorks, BottomCTA, and Footer in a dark-themed layout.",
+  "frontend/src/components/BottomCTA.tsx": "Inline booking form section collecting Full Name, Email, Business Name, and a message textarea; includes client-side validation, loading state, backend submission via useActor, and a success confirmation view.",
+  "frontend/src/components/Footer.tsx": "Minimal footer displaying the FlowScale AI brand, copyright year, and a caffeine.ai attribution link with UTM tracking.",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with a background image, radial glow, animated badge, gradient headline, subheadline, a CTA button that scrolls to the CTA section, and a three-stat row.",
+  "frontend/src/components/HowItWorks.tsx": "Renders a 4-step process section (Audit, Identify, Implement, Optimize) with icons, connecting lines, and numbered badges showing how the AI workflow service is delivered.",
+  "frontend/src/components/Navigation.tsx": "Fixed top navigation bar with a FlowScale AI logo and a 'Book a Call' button that smoothly scrolls to the booking form section; applies a backdrop blur style after scrolling 40px.",
+  "frontend/src/components/Problem.tsx": "Displays a section highlighting four common business pain points (unanswered DMs, no cart recovery, manual follow-ups, lost leads) as icon cards with brief descriptions.",
+  "frontend/src/components/Solution.tsx": "Presents four AI automation services (DM automation, lead qualification, cart recovery, email/CRM) as hover-interactive cards in a two-column grid.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor using React Query, returning either an authenticated or anonymous actor based on the current Internet Identity, and invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and hook, managing AuthClient creation, login/logout flows, identity persistence, and exposing status flags via a React context provider.",
+  "frontend/src/index.css": "Global stylesheet that defines a dark-only OKLCH-based design token system via CSS variables, imports Inter font, and adds utility classes for gradient text, teal glow effects, and a grid background pattern.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped with TanStack QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration for the frontend, extending the default theme with custom colors (using oklch CSS variables), typography, border radius, box shadows, keyframe animations, and plugins including typography, container queries, and animate.",
+  "project_state.json": "Project state file tracking the FlowScale AI landing page build, including version metadata, architectural notes, known issues, and a list of existing implemented features covering dark theme design and all five page sections (Hero, Problem, Solution, How It Works, CTA)."
+}

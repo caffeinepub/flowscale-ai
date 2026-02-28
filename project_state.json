@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Landing page website for FlowScale AI, an AI automation agency targeting D2C brands and small businesses. Dark theme, minimal, modern startup feel. Sections: Hero, Problem, Solution, How It Works, and CTA.",
+  "architectural_notes": [
+    "Dark theme with minimal, clean typography and modern startup aesthetic — no stock corporate photos",
+    "Five sections: Hero, Problem, Solution, How It Works, CTA — each with specific copy and CTAs provided by user"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-apply-a-cohesive-dark-theme-visual-design-across-the-entire-site-near-black-background-0a0a0a-or-equivalent-off-white-light-gray-body-text-a-single-sharp-accent-color-e-g-electric-teal-or-bright-lime-not-blue-purple-clean-sans-serif-typography-e-g-inter-or-similar-generous-whitespace-no-decorative-stock-photos-and-subtle-geometric-gradient-accents-to-convey-a-modern-startup-feel",
+      "title": "Apply a cohesive dark-theme visual design across the entire site: near-black background (#0A0A0A or equivalent), off-white/light-gray body text, a single sharp accent color (e.g., electric teal or bright lime — not blue/purple), clean sans-serif typography (e.g., Inter or similar), generous whitespace, no decorative stock photos, and subtle geometric/gradient accents to convey a modern startup feel.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-hero-section-with-the-headline-turn-missed-leads-into-automated-revenue-subheadline-flowscale-ai-helps-growing-brands-automate-dms-recover-abandoned-carts-and-increase-conversions-using-intelligent-ai-powered-workflows-and-a-prominent-cta-button-labeled-book-a-free-automation-audit-the-hero-background-should-use-a-subtle-abstract-gradient-or-geometric-pattern-no-photos",
+      "title": "Build a Hero section with the headline 'Turn Missed Leads Into Automated Revenue.', subheadline 'FlowScale AI helps growing brands automate DMs, recover abandoned carts, and increase conversions using intelligent AI-powered workflows.', and a prominent CTA button labeled 'Book a Free Automation Audit'. The hero background should use a subtle abstract gradient or geometric pattern (no photos).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-problem-section-with-the-headline-most-brands-lose-20-30-revenue-from-slow-responses-followed-by-four-bullet-points-unanswered-instagram-whatsapp-dms-no-abandoned-cart-recovery-manual-follow-ups-eating-time-leads-slipping-through-the-cracks-use-iconography-or-simple-visual-markers-not-photos-to-reinforce-each-point",
+      "title": "Build a Problem section with the headline 'Most Brands Lose 20–30% Revenue From Slow Responses.' followed by four bullet points: 'Unanswered Instagram & WhatsApp DMs', 'No abandoned cart recovery', 'Manual follow-ups eating time', 'Leads slipping through the cracks'. Use iconography or simple visual markers (not photos) to reinforce each point.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-solution-section-with-the-headline-ai-systems-that-work-24-7-and-four-service-cards-instagram-whatsapp-dm-automation-ai-lead-qualification-abandoned-cart-recovery-flows-email-crm-automation-each-card-should-have-a-brief-one-line-description-and-a-simple-icon-cards-should-be-displayed-in-a-responsive-grid",
+      "title": "Build a Solution section with the headline 'AI Systems That Work 24/7.' and four service cards: 'Instagram & WhatsApp DM Automation', 'AI Lead Qualification', 'Abandoned Cart Recovery Flows', 'Email & CRM Automation'. Each card should have a brief one-line description and a simple icon. Cards should be displayed in a responsive grid.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-how-it-works-section-with-four-numbered-steps-displayed-in-a-horizontal-timeline-or-stepped-layout-step-1-audit-your-current-funnel-step-2-identify-revenue-leaks-step-3-implement-ai-workflows-step-4-optimize-for-higher-conversions-use-numbered-indicators-and-a-connecting-line-or-arrow-treatment-between-steps",
+      "title": "Build a 'How It Works' section with four numbered steps displayed in a horizontal timeline or stepped layout: Step 1: 'Audit your current funnel', Step 2: 'Identify revenue leaks', Step 3: 'Implement AI workflows', Step 4: 'Optimize for higher conversions'. Use numbered indicators and a connecting line or arrow treatment between steps.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-bottom-cta-section-with-the-headline-let-s-automate-your-growth-and-a-cta-button-labeled-book-a-free-15-min-strategy-call-this-section-should-use-a-slightly-elevated-background-treatment-e-g-a-subtle-gradient-panel-or-accent-border-to-visually-separate-it-from-the-section-above-and-draw-attention",
+      "title": "Build a bottom CTA section with the headline 'Let's Automate Your Growth.' and a CTA button labeled 'Book a Free 15-Min Strategy Call'. This section should use a slightly elevated background treatment (e.g., a subtle gradient panel or accent border) to visually separate it from the section above and draw attention.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-minimal-sticky-top-navigation-bar-showing-the-flowscale-ai-brand-name-logo-on-the-left-and-a-single-book-a-call-cta-button-on-the-right-the-nav-should-be-transparent-over-the-hero-and-switch-to-a-dark-opaque-background-on-scroll",
+      "title": "Add a minimal sticky top navigation bar showing the 'FlowScale AI' brand name/logo on the left and a single 'Book a Call' CTA button on the right. The nav should be transparent over the hero and switch to a dark opaque background on scroll.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-minimal-footer-with-the-flowscale-ai-name-a-short-tagline-e-g-intelligent-automation-for-growing-brands-and-a-copyright-line-no-links-grid-or-complex-layout-needed-keep-it-one-row-or-two-row-minimal",
+      "title": "Add a minimal footer with the 'FlowScale AI' name, a short tagline (e.g., 'Intelligent automation for growing brands.'), and a copyright line. No links grid or complex layout needed — keep it one-row or two-row minimal.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-book-a-free-15-min-strategy-call-button-in-the-bottomcta-section-with-an-inline-contact-booking-form-the-form-should-collect-full-name-email-address-business-name-and-a-brief-message-or-what-do-you-want-to-automate-textarea-include-a-submit-button-labeled-book-my-free-strategy-call-the-form-should-match-the-existing-dark-theme-near-black-background-teal-accent-inter-typography-and-display-a-success-confirmation-message-after-submission",
+      "title": "Replace the 'Book a Free 15-Min Strategy Call' button in the BottomCTA section with an inline contact/booking form. The form should collect: Full Name, Email Address, Business Name, and a brief message or 'What do you want to automate?' textarea. Include a submit button labeled 'Book My Free Strategy Call'. The form should match the existing dark theme (near-black background, teal accent, Inter typography) and display a success confirmation message after submission.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-wire-the-frontend-contact-form-in-the-bottomcta-section-to-call-the-backend-submitcontactform-canister-method-via-the-existing-useactor-hook-on-successful-canister-call-show-the-success-confirmation-message-on-error-display-an-inline-error-message-prompting-the-user-to-try-again",
+      "title": "Wire the frontend contact form in the BottomCTA section to call the backend submitContactForm canister method via the existing useActor hook. On successful canister call, show the success confirmation message. On error, display an inline error message prompting the user to try again.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add a contact form or calendar embed to the 'Book a Free 15-Min Strategy Call' CTA button so visitors can book directly",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Store contact form submissions in the backend. Add a Motoko data type and stable storage for form entries containing: name (Text), email (Text), businessName (Text), message (Text), and a timestamp. Expose a submit function that accepts these fields and appends the entry to stable storage, and an admin query to retrieve all submissions.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "FlowScale AI",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

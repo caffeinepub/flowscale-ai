@@ -1,0 +1,87 @@
+{
+  "kind": "build_request",
+  "title": "Add inline booking/contact form to Strategy Call CTA",
+  "projectName": "FlowScale AI",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Replace the 'Book a Free 15-Min Strategy Call' button in the BottomCTA section with an inline contact/booking form. The form should collect: Full Name, Email Address, Business Name, and a brief message or 'What do you want to automate?' textarea. Include a submit button labeled 'Book My Free Strategy Call'. The form should match the existing dark theme (near-black background, teal accent, Inter typography) and display a success confirmation message after submission.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "yeah taht would be nice",
+          "Want to add a contact form or calendar embed to the strategy call button so visitors can book directly?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The BottomCTA section displays an inline form instead of (or below) the CTA button",
+        "Form fields: Full Name, Email Address, Business Name, and a 'What do you want to automate?' textarea",
+        "Submit button is labeled 'Book My Free Strategy Call' and uses the teal accent styling",
+        "On successful submission, a confirmation message is shown (e.g., 'Thanks! We'll be in touch within 24 hours.')",
+        "Form validates that Name and Email fields are non-empty before submission",
+        "Form visually matches the dark theme with teal accent colors and Inter typography",
+        "Form is responsive and displays correctly on mobile and desktop"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Store contact form submissions in the backend. Add a Motoko data type and stable storage for form entries containing: name (Text), email (Text), businessName (Text), message (Text), and a timestamp. Expose a submit function that accepts these fields and appends the entry to stable storage, and an admin query to retrieve all submissions.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "yeah taht would be nice",
+          "Want to add a contact form or calendar embed to the strategy call button so visitors can book directly?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A stable array or map in the Motoko actor stores contact form submissions",
+        "Each entry includes name, email, businessName, message, and createdAt timestamp",
+        "A public update function (e.g., submitContactForm) accepts the four fields and persists the entry",
+        "A public query function (e.g., getContactSubmissions) returns all stored entries",
+        "The actor compiles without errors"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Wire the frontend contact form in the BottomCTA section to call the backend submitContactForm canister method via the existing useActor hook. On successful canister call, show the success confirmation message. On error, display an inline error message prompting the user to try again.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "yeah taht would be nice"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form submission calls the backend submitContactForm method using the actor from useActor",
+        "A loading/spinner state is shown on the submit button while the call is in-flight",
+        "On success, the form is replaced or cleared and a confirmation message is shown",
+        "On error, an inline error message is displayed without clearing the form fields",
+        "The 'Book a Call' button in the Navigation bar smooth-scrolls to the BottomCTA form section"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "Maintain the existing dark theme, teal accent color, and Inter typography from index.css and tailwind.config.js",
+    "All Motoko logic must remain in backend/main.mo as a single actor"
+  ],
+  "nonGoals": [
+    "No third-party calendar embed (e.g., Calendly) — use an inline form instead",
+    "No email delivery or SMTP integration for form notifications",
+    "No authentication required to submit the contact form",
+    "No admin UI for viewing submissions — backend query is sufficient"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
